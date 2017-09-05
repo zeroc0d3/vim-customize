@@ -1,2 +1,2 @@
 # vim-customize
-Customize configuration vundle vim with tmux
+Customize configuration vundle vim, nvim (neovim) with tmux
