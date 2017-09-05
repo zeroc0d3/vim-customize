@@ -101,9 +101,8 @@
 
     " General {
         if count(g:spf13_bundle_groups, 'general')
-            Bundle 'ap/vim-buftabline'
-            Bundle 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
             Bundle 'scrooloose/nerdtree'
+            Bundle 'Xuyuanp/nerdtree-git-plugin'
             Bundle 'altercation/vim-colors-solarized'
             Bundle 'spf13/vim-colors'
             Bundle 'tpope/vim-surround'
@@ -129,6 +128,10 @@
             Bundle 'easymotion/vim-easymotion'
             Bundle 'jistr/vim-nerdtree-tabs'
             Bundle 'flazz/vim-colorschemes'
+            Bundle 'dracula/vim'
+            Bundle 'isobit/vim-darcula-colors'
+            Bundle 'Railscasts-Theme-GUIand256color'
+            Bundle 'jnurmine/Zenburn'
             Bundle 'mbbill/undotree'
             Bundle 'nathanaelkane/vim-indent-guides'
             if !exists('g:spf13_no_views')
@@ -141,6 +144,13 @@
             Bundle 'kana/vim-textobj-indent'
             Bundle 'gcmt/wildfire.vim'
             Bundle 'joonty/vdebug'
+            Bundle 'elixir-lang/vim-elixir'
+            Bundle 'ap/vim-buftabline'
+            Bundle 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+            Bundle 'Shougo/vimproc.vim', { 'do': 'make' }
+            Bundle 'Shougo/vimshell.vim'
+            Bundle 'thirtythreeforty/lessspace.vim'
+            Bundle 'Raimondi/delimitMate'
         endif
     " }
 
@@ -180,6 +190,7 @@
             endif
         elseif count(g:spf13_bundle_groups, 'youcompleteme')
             Bundle 'Valloric/YouCompleteMe'
+            " Bundle 'Valloric/YouCompleteMe', { 'do': './install.py' }
             Bundle 'SirVer/ultisnips'
             Bundle 'honza/vim-snippets'
         elseif count(g:spf13_bundle_groups, 'neocomplcache')
